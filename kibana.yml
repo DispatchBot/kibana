@@ -53,7 +53,7 @@ elasticsearch.url: 'https://insights-elasticsearch.dispatchbot.internal:9200'
 
 # Optional setting that enables you to specify a path to the PEM file for the certificate
 # authority for your Elasticsearch instance.
-elasticsearch.ssl.ca: /usr/local/share/ca-certificates/dispatchbot-ca-chain.cert.crt
+elasticsearch.ssl.ca: /etc/pki/ca-trust/source/anchors/dispatchbot-ca-chain.cert.crt
 
 # To disregard the validity of SSL certificates, change this setting’s value to false.
 elasticsearch.ssl.verify: true
