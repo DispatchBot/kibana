@@ -11,6 +11,6 @@ RUN yum update -y && \
   update-ca-trust extract && \
   yum remove -y wget
 
-USER kibana
+COPY kibana.yml kibana.yml
 
-COPY kibana.yml /etc/kibana/kibana.yml
+USER kibana
